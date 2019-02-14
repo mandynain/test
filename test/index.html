@@ -4,9 +4,25 @@
     <meta charset="utf-8" />
     <title>test</title>
     <link href="css/default.css" rel="stylesheet" />
+
+
+   
+    <script>
+        function addNumbers(countUpTo) {
+            sum = 0;
+            for (i = 0; i < countUpTo; i++) {
+                sum+= i;
+            }
+            
+            return sum;
+        }
+    </script>
+
 </head>
-<body>
-    <div>Content goes here!</div>
-    <script src="js/main.js"></script>
-</body>
+    <body>
+        <script>
+            var input = prompt("input your number");
+            document.write(addNumbers(input));
+        </script>
+    </body>
 </html>
